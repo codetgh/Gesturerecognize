@@ -41,6 +41,9 @@ public class GestureActivity extends AppCompatActivity implements
         setImageToDraw();
 
         alphabetLibrary = GestureLibraries.fromRawResource(this, R.raw.gestures_shap);
+        //for recognize alphabet draw by user on screen
+        //alphabetLibrary = GestureLibraries.fromRawResource(this,R.raw.abc);
+
         if (!alphabetLibrary.load()) {
             finish();
         }
